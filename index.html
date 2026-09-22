@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Station Service - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav class="site-nav">
+        <a class="logo" href="#accueil" aria-label="Retour à l'accueil">
+            <span class="logo-mark">MS</span>
+            <span>Ma Station</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reservation">Contact</a></li>
+            <li><a href="#localisation">Nous trouver</a></li>
+        </ul>
+    </nav>
+
+    <!-- 1. Section Accueil (Hero) -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">Votre trajet commence ici</p>
+            <h1>Bienvenue à notre Station Service</h1>
+            <p>Ouvert 24h/24 et 7j/7 pour votre confort</p>
+            <div class="hero-actions">
+                <a href="#services" class="btn">Découvrir nos services</a>
+                <a href="#localisation" class="text-link">Nous trouver <span aria-hidden="true">→</span></a>
+            </div>
+        </div>
+        <div class="hero-badge" aria-label="Station ouverte 24 heures sur 24">
+            <span class="status-dot"></span>
+            Ouvert aujourd'hui, 24h/24
+        </div>
+    </section>
+
+    <!-- 2. Section Services -->
+    <section id="services">
+        <p class="eyebrow eyebrow-dark">Tout sur votre route</p>
+        <h2>Nos services</h2>
+        <p class="section-intro">Une pause pratique, rapide et agréable, que vous soyez de passage ou du quartier.</p>
+        <div class="services-grid">
+            <div class="service-card">
+            <span class="service-number">01</span>
+                <h3>Carburant</h3>
+                <p>Essence et Diesel de haute qualité.</p>
+                <!-- On mettra une image ici plus tard -->
+            </div>
+            <div class="service-card">
+                <span class="service-number">02</span>
+                <h3>Lavage Auto</h3>
+                <p>Nettoyage intérieur et extérieur.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-number">03</span>
+                <h3>Boutique & Café</h3>
+                <p>Faites une pause lors de votre trajet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Section Réservation / Contact -->
+    <section id="reservation">
+        <p class="eyebrow eyebrow-dark">Une question ?</p>
+        <h2>Nous contacter</h2>
+        <p>Besoin d'un renseignement ou d'un service spécifique ?</p>
+        <a href="https://wa.me/numerodetelephone" class="btn btn-whatsapp">Contactez-nous sur WhatsApp</a>
+    </section>
+
+    <!-- 4. Section Google Maps -->
+    <section id="localisation">
+        <p class="eyebrow eyebrow-dark">Toujours à proximité</p>
+        <h2>Nous trouver</h2>
+        <p>Retrouvez-nous facilement grâce à la carte ci-dessous.</p>
+        <div class="map-container">
+            <!-- C'est ici qu'on collera le code de ta future fiche Google Maps -->
+            <p class="placeholder-map">[La carte Google Maps sera insérée ici]</p>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2026 Ma Station Service. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
