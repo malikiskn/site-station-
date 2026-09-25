@@ -141,3 +141,29 @@ footer { padding: 20px; background: #0d3026; color: white; text-align: center; }
     .contact-options { align-items: stretch; flex-direction: column; }
     section { padding-top: 92px; padding-bottom: 72px; }
 }
+
+.developer-credit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.dev-links {
+    display: flex;
+    gap: 10px;
+}
+
+.dev-links a {
+    display: flex;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.dev-links a:hover {
+    color: var(--yellow);
+    transform: translateY(-2px);
+}
