@@ -34,6 +34,14 @@ body { background: var(--cream); color: var(--ink); line-height: 1.6; }
     background: rgba(18, 70, 56, 0.96);
     color: white;
     backdrop-filter: blur(12px);
+    transition: padding 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.site-nav.is-scrolled {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background: rgba(18, 70, 56, 0.99);
+    box-shadow: 0 8px 24px rgba(13, 48, 38, 0.18);
 }
 
 .logo { display: flex; align-items: center; gap: 10px; color: white; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; }
@@ -79,6 +87,27 @@ h2 { margin-bottom: 14px; color: var(--ink); font-family: 'Space Grotesk', sans-
 .service-number { display: block; margin-bottom: 28px; color: var(--green); font-family: 'Space Grotesk', sans-serif; font-size: 0.8rem; font-weight: 700; }
 .service-card h3 { margin-bottom: 18px; color: var(--ink); font-family: 'Space Grotesk', sans-serif; font-size: 1.35rem; }
 .service-card p, #reservation > p:not(.eyebrow), #localisation > p:not(.eyebrow) { color: var(--muted); }
+
+html.js-enabled .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+html.js-enabled .reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html.js-enabled .reveal-on-scroll {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .site-nav { transition: none; }
+}
 
 .price-list { display: grid; gap: 11px; list-style: none; }
 .price-list li { display: flex; justify-content: space-between; gap: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--line); color: var(--muted); }
