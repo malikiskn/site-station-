@@ -12,7 +12,7 @@
     <nav class="site-nav">
         <a class="logo" href="#accueil" aria-label="Retour à l'accueil">
             <span class="logo-mark">MS</span>
-            <span>Ma Station</span>
+            <span>Station M Sokhona</span>
         </a>
         <ul class="nav-links">
             <li><a href="#accueil">Accueil</a></li>
@@ -27,39 +27,48 @@
         <div class="hero-content">
             <p class="eyebrow">Votre trajet commence ici</p>
             <h1>Bienvenue à notre Station Service</h1>
-            <p>Ouvert 24h/24 et 7j/7 pour votre confort</p>
+            <p>Ouvert 7j/7, de 9h à 19h pour votre confort</p>
             <div class="hero-actions">
                 <a href="#services" class="btn">Découvrir nos services</a>
                 <a href="#localisation" class="text-link">Nous trouver <span aria-hidden="true">→</span></a>
             </div>
         </div>
-        <div class="hero-badge" aria-label="Station ouverte 24 heures sur 24">
+        <div class="hero-badge" aria-label="Station ouverte tous les jours de 9 heures à 19 heures">
             <span class="status-dot"></span>
-            Ouvert aujourd'hui, 24h/24
+            Ouvert 7j/7, 9h - 19h
         </div>
     </section>
 
     <!-- 2. Section Services -->
     <section id="services">
         <p class="eyebrow eyebrow-dark">Tout sur votre route</p>
-        <h2>Nos services</h2>
-        <p class="section-intro">Une pause pratique, rapide et agréable, que vous soyez de passage ou du quartier.</p>
+        <h2>Lavage et services</h2>
+        <p class="section-intro">Des tarifs minimums qui varient selon le véhicule, sa taille et l'état de saleté.</p>
         <div class="services-grid">
             <div class="service-card">
-            <span class="service-number">01</span>
-                <h3>Carburant</h3>
-                <p>Essence et Diesel de haute qualité.</p>
-                <!-- On mettra une image ici plus tard -->
+                <span class="service-number">01 · LAVAGE AUTO</span>
+                <h3>Véhicules</h3>
+                <ul class="price-list">
+                    <li><span>Berline</span><strong>à partir de 150 MRU</strong></li>
+                    <li><span>Hilux</span><strong>à partir de 200 MRU</strong></li>
+                    <li><span>Bus mini</span><strong>à partir de 250 MRU</strong></li>
+                    <li><span>Moto</span><strong>50 MRU</strong></li>
+                </ul>
             </div>
             <div class="service-card">
-                <span class="service-number">02</span>
-                <h3>Lavage Auto</h3>
-                <p>Nettoyage intérieur et extérieur.</p>
+                <span class="service-number">02 · ENTRETIEN</span>
+                <h3>Nettoyage ciblé</h3>
+                <ul class="price-list">
+                    <li><span>Radiateur</span><strong>50 MRU</strong></li>
+                    <li><span>Moteur seul</span><strong>50 MRU</strong></li>
+                    <li><span>Tapis</span><strong>100 MRU / m</strong></li>
+                </ul>
+                <p class="price-note">Les prix indiqués sont les tarifs minimums.</p>
             </div>
             <div class="service-card">
-                <span class="service-number">03</span>
-                <h3>Boutique & Café</h3>
-                <p>Faites une pause lors de votre trajet.</p>
+                <span class="service-number">03 · STATION</span>
+                <h3>Carburant, boutique & café</h3>
+                <p>Essence, Diesel et une pause pratique pendant votre trajet.</p>
             </div>
         </div>
     </section>
@@ -69,7 +78,10 @@
         <p class="eyebrow eyebrow-dark">Une question ?</p>
         <h2>Nous contacter</h2>
         <p>Besoin d'un renseignement ou d'un service spécifique ?</p>
-        <a href="https://wa.me/numerodetelephone" class="btn btn-whatsapp">Contactez-nous sur WhatsApp</a>
+        <div class="contact-options">
+            <a href="https://wa.me/22241046869" class="btn btn-whatsapp btn-whatsapp-alt">WhatsApp 41 04 68 69</a>
+            <a href="https://wa.me/22246420877" class="btn btn-whatsapp">WhatsApp 46 42 08 77</a>
+        </div>
     </section>
 
     <!-- 4. Section Google Maps -->
@@ -78,14 +90,20 @@
         <h2>Nous trouver</h2>
         <p>Retrouvez-nous facilement grâce à la carte ci-dessous.</p>
         <div class="map-container">
-            <!-- C'est ici qu'on collera le code de ta future fiche Google Maps -->
-            <p class="placeholder-map">[La carte Google Maps sera insérée ici]</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4252.148896530011!2d-16.004435!3d18.078147999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDA0JzQxLjMiTiAxNsKwMDAnMTYuMCJX!5e1!3m2!1sfr!2s!4v1790199445095!5m2!1sfr!2s"
+                title="Localisation de la Station M Sokhona sur Google Maps"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
         </div>
+        <a class="map-fallback" href="https://maps.app.goo.gl/9UAWWprTt24mLnZh8" target="_blank" rel="noopener noreferrer">Ouvrir la carte dans Google Maps <span aria-hidden="true">↗</span></a>
     </section>
 
     <!-- Pied de page -->
     <footer>
-        <p>&copy; 2026 Ma Station Service. Tous droits réservés.</p>
+        <p>&copy; 2026 Station M Sokhona. Tous droits réservés.</p>
     </footer>
 
 </body>
